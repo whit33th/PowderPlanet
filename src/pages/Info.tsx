@@ -5,15 +5,15 @@ function Info() {
 	return (
 
 		<>
-			<div className='  w-full px-24 py-12  relative '>
+			<div className='  w-full px-24 py-12  relative overflow-hidden'>
 				<h2 className='z-10 text-center  py-6'>Region:</h2>
-				<div className=' *:z-10 grid grid-cols-1 gap-12	  '>
+				<div className='*:border *:border-[#262626] *:z-10 grid grid-cols-1 gap-12	  '>
 					<div className=' h-[250px] w-full rounded-xl p-12 relative flex justify-center items-center flex-col bg-[#23232380]  group	 '>
 
-						<Image className='absolute top-0 left-0 z-0 object-cover object-center  rounded-xl  brightness-[0.45] h-full opacity-40' src={'/assets/img/zaunBg.png'} width={1920} height={1080} alt="" />
+						<Image className='absolute top-0 left-0 z-0 object-cover object-center  rounded-xl  brightness-[0.45] h-full opacity-100' src={'/assets/img/zaunBg.png'} width={1920} height={1080} alt="" />
 
 						<Image className='group-hover:scale-110 transition-all duration-300 ease-in-out drop-shadow-2xl	 w-fit h-fit' src={'/assets/img/zaun_emblem.png'} width={100} height={100} alt="" />
-						<p className='z-10  text-2xl text-[#66a832]'>Zaun</p>
+						<p className='z-10  text-3xl text-[#66a832]'>Zaun</p>
 					</div>
 
 				</div>
@@ -62,7 +62,7 @@ function Info() {
 
 				</div>
 
-				{/* <Image className='absolute top-0 left-0 z-[-1] rounded-xl  brightness-[0.3] h-full w-full  blur-[10px]  opacity-100' src={'/assets/img/zaunGIF.gif'} width={1920} height={1080} alt="" /> */}
+				
 				<video
 					className='  absolute top-0 left-0 z-0 object-cover object-center rounded-xl h-full  blur-[10px] -hue-rotate-[320deg]	 opacity-40'
 					src="/assets/video/sky.mp4"
