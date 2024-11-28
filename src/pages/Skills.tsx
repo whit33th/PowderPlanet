@@ -2,6 +2,12 @@ import useGetHero from '@/api/Hooks/useGetHero'
 import React from 'react'
 import Image from 'next/image'
 import FullScreenGrafity from './../components/Containers/FullScreanGrafity';
+type Spell = {
+  id: string // Уникальный идентификатор способности
+  name: string // Название способности
+  tooltip: string // Описание способности
+}
+
 
 function Skills() {
   const hero = 'Jinx'
@@ -59,7 +65,7 @@ function Skills() {
         {isLoading ? (
           <div>Loading...</div>
         ) : (
-          data.spells.map((spell: any, index: number) => (
+            data.spells.map((spell: Spell, index: number) => (
             <div key={index} className="flex flex-col bg-gray-900 rounded-xl shadow-lg overflow-hidden">
               
               <video
