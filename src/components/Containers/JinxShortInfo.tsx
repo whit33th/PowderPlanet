@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
-import { is } from './../../../.next/server/chunks/210'
 
 function JinxShortInfo() {
   const [isJinx, setIsJinx] = useState(true)
