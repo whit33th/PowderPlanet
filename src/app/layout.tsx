@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import localFont from "next/font/local"
 import "./globals.css"
 
+import QueryProvide from './../helpers/QueryProvide';
 const league = localFont({
   src: "./fonts/League.otf",
   weight: "100 900",
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
   title: "PowderPlanet",
   description: "We strive to become Wikipedia about Jinx, and in the future, about the entire Arcane lore.",
   icons: {
-    icon: '/favicon.ico', 
+    icon: '/favicon.ico',
   },
 }
 
@@ -23,17 +24,19 @@ export default function RootLayout({
 }>) {
   
   return (
-    
+
     <html lang="en">
       <head><link rel="icon" href="/favicon.ico" sizes="any" /></head>
-      
+
       <body
         className={`${league} antialiased`}
       >
-        {children} 
+        <QueryProvide>
+          {children}
+        </QueryProvide>
       </body>
-      
+
     </html>
-   
+
   )
 }

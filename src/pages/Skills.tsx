@@ -40,7 +40,7 @@ function Skills() {
 
   return (
     <div className="p-24 relative   ">
-      <div className='*:blur-[1px]'>
+      <div className='*:blur-[1px] *:z-[-1]'>
         
         <Image src={`/assets/img/cloud2.webp`} alt="" width={220} height={100} className="absolute top-[40px] left-[170px] -rotate-6 opacity-70" />
         <Image src={`/assets/img/cloud1.webp`} alt="" width={200} height={100} className="absolute top-[50px] right-[70px] rotate-6 opacity-30" />
@@ -49,7 +49,7 @@ function Skills() {
         <Image src={`/assets/img/cloud2.webp`} alt="" width={200} height={100} className="absolute top-[70px] right-[400px] rotate-12 opacity-60" />
 </div>
      
-      <div className='mb-12'>
+      <div className='mb-12 z-10 '>
         <h1 className='text-5xl text-center'>Skills</h1>
         <h1 className='text-5xl text-center'>
           Ski<span className='text-[#3e71d7]'>X</span>
