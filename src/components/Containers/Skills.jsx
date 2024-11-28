@@ -37,15 +37,8 @@ function Skills() {
 
 
   return (
-    <div className="p-24 relative   ">
-      <div className='*:blur-[1px] *:z-[-1]'>
+    <div className="md:p-24 relative p-4   ">
 
-        <Image src={`/assets/img/cloud2.webp`} alt="" width={220} height={100} className="absolute top-[40px] left-[170px] -rotate-6 opacity-70" />
-        <Image src={`/assets/img/cloud1.webp`} alt="" width={200} height={100} className="absolute top-[50px] right-[70px] rotate-6 opacity-30" />
-
-
-        <Image src={`/assets/img/cloud2.webp`} alt="" width={200} height={100} className="absolute top-[70px] right-[400px] rotate-12 opacity-60" />
-      </div>
 
       <div className='mb-12 z-10 '>
         <h1 className='text-5xl text-center'>Skills</h1>
@@ -59,13 +52,17 @@ function Skills() {
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
         {isLoading ? (
           <div>Loading...</div>
         ) : (
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
           data.spells.map((spell, index) => (
             <div key={index} className="flex flex-col bg-gray-900 rounded-xl shadow-lg overflow-hidden">
+              <Image src={`/assets/img/Smile.png`} alt="" width={200} height={200} className="hidden md:block absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/3  scale-y-[1.15] drop-shadow-[0_10px_20px_#431dc11f] opacity-90 brightness-[0.8] rotate-[12deg] " />
+              
+              <Image src={`/assets/img/butterfly.png`} alt="" width={300} height={300} className=" hidden md:block  absolute bottom-0 right-20 md:right-0 translate-x-1/2 translate-y-1/2  opacity-90   rotate-[-40deg] hue-rotate-30 drop-shadow-2xl md:w-[150px] w-32 " />
+
 
               <video
                 className="w-full object-cover "
@@ -79,15 +76,22 @@ function Skills() {
 
               <div className="p-4 flex flex-col gap-4">
 
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 overflow-hidden">
+                  
                   <Image
                     src={`/assets/img/${spell.id}.webp`}
                     alt=""
                     width={64}
                     height={64}
-                    className="rounded-md border border-gray-700"
+                    className="rounded-md border relative border-gray-700"
+                    
                   />
-                  <h3 className="text-white text-lg font-semibold">{spell.name}</h3>
+                  
+                  <div className=' flex'>
+                    <h3 className="text-white text-lg font-semibold w-lvw ">{spell.name}</h3>
+                    
+                  </div>
+
                 </div>
 
 
@@ -100,6 +104,8 @@ function Skills() {
           ))
         )}
       </div>
+
+      <Image src={`/assets/img/Workshop.png`} alt="" width={1500} height={1200} className="absolute top-0 left-0 w-full h-full z-[-1] opacity-30 blur-md" />
 
       <FullScreenGrafity />
     </div>

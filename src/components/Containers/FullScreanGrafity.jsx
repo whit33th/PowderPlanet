@@ -3,7 +3,7 @@ import React from 'react'
 
 function FullScreenGrafity() {
 	return (
-		<div className='absolute top-0 left-0 w-full h-full z-[-1]'>
+		<div className='absolute top-0 left-0 w-full h-full z-[-1] overflow-x-clip'>
 
 
 			
