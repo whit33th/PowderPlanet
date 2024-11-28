@@ -12,11 +12,6 @@ function HalfScreenGrafity() {
 				src="/assets/img/what.gif"
 				alt=""
 			/>
-
-
-
-
-
 			<Image
 				className="absolute top-[15%] left-[43%] opacity-30 z-0 rotate-[150deg] blur-[3px]"
 				width={200}
@@ -90,10 +85,6 @@ function HalfScreenGrafity() {
 				src="/assets/img/yay.gif"
 				alt=""
 			/>
-
-
-
-
 			<Image
 				className="absolute top-[-10%] left-[60%] opacity-30 z-0 rotate-[-183deg] -hue-rotate-[-120deg] blur-[8px]"
 				width={400}
@@ -101,7 +92,7 @@ function HalfScreenGrafity() {
 				src="/assets/img/boom.gif"
 				alt=""
 			/>
-<Image
+			<Image
 				className="absolute top-[20%] left-[65%] opacity-10 z-0 rotate-[-30deg] -hue-rotate-[-90deg] blur-[1px]"
 				width={200}
 				height={200}
@@ -114,7 +105,28 @@ function HalfScreenGrafity() {
 				height={100}
 				src="/assets/img/what.gif"
 				alt=""
-			/></div>
+			/>
+
+			<Image
+				className="absolute top-[125px] left-[-70px]  rotate-[98deg]   opacity-80 "
+				width={200}
+				height={100}
+				src="/assets/img/arrow2.png"
+				alt=""
+			/>
+			<Image
+				className="absolute top-[-60px] left-[130px] rotate-[130deg]  opacity-80  "
+				width={160}
+				height={100}
+				src="/assets/img/arrow3.png"
+				alt=""
+			/>
+
+		</div>
+
+
+
+
 	)
 }
 

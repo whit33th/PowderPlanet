@@ -29,6 +29,9 @@ main {
   opacity: 1;
   display: block;
 }
+x
+
+  
 
 img {
   position: relative;
@@ -46,8 +49,7 @@ img {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: -webkit-linear-gradient(16deg, #E21392, #e41996);
+  background: -webkit-linear-gradient(16deg, #e21392, #e41996);
   border-radius: 10px;
   border: 2px solid #1e1e1e;
 }
-
