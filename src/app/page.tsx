@@ -1,9 +1,9 @@
 'use client'
 
-import HomePage from '@/pages/HomePage'
-import Info from '@/pages/Info'
-import JinxShortInfo from '@/pages/JinxShortInfo'
-import Skills from '@/pages/Skills'
+import HomePage from '@/components/Containers/HomePage'
+import Info from '@/components/Containers/Info'
+import JinxShortInfo from '@/components/Containers/JinxShortInfo'
+import Skills from '@/components/Containers/Skills'
 
 export default function Home () {
  

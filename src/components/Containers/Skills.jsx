@@ -1,12 +1,10 @@
+'use client'
+
 import useGetHero from '@/api/Hooks/useGetHero'
 import React from 'react'
 import Image from 'next/image'
-import FullScreenGrafity from './../components/Containers/FullScreanGrafity';
-type Spell = {
-  id: string // Уникальный идентификатор способности
-  name: string // Название способности
-  tooltip: string // Описание способности
-}
+import FullScreenGrafity from './FullScreanGrafity'
+
 
 
 function Skills() {
@@ -15,7 +13,7 @@ function Skills() {
 
   const key = ['Q', 'W', 'E', 'R']
 
-  const formatTooltip = (tooltip: string) => {
+  const formatTooltip = (tooltip) => {
     return tooltip
       .replace(
         /<physicalDamage>(.*?)<\/physicalDamage>/g,
@@ -34,21 +32,21 @@ function Skills() {
         `<span class="text-green-400 font-bold">$1</span>`
       )
       .replace(/\{\{(.*?)\}\}/g, '')
-    
+
   }
-  console.log(data)
+
 
   return (
     <div className="p-24 relative   ">
       <div className='*:blur-[1px] *:z-[-1]'>
-        
+
         <Image src={`/assets/img/cloud2.webp`} alt="" width={220} height={100} className="absolute top-[40px] left-[170px] -rotate-6 opacity-70" />
         <Image src={`/assets/img/cloud1.webp`} alt="" width={200} height={100} className="absolute top-[50px] right-[70px] rotate-6 opacity-30" />
 
-        
+
         <Image src={`/assets/img/cloud2.webp`} alt="" width={200} height={100} className="absolute top-[70px] right-[400px] rotate-12 opacity-60" />
-</div>
-     
+      </div>
+
       <div className='mb-12 z-10 '>
         <h1 className='text-5xl text-center'>Skills</h1>
         <h1 className='text-5xl text-center'>
@@ -65,9 +63,10 @@ function Skills() {
         {isLoading ? (
           <div>Loading...</div>
         ) : (
-            data.spells.map((spell: Spell, index: number) => (
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          data.spells.map((spell, index) => (
             <div key={index} className="flex flex-col bg-gray-900 rounded-xl shadow-lg overflow-hidden">
-              
+
               <video
                 className="w-full object-cover "
                 autoPlay
@@ -102,7 +101,7 @@ function Skills() {
         )}
       </div>
 
-      <FullScreenGrafity/>
+      <FullScreenGrafity />
     </div>
   )
 }
