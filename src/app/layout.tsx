@@ -10,10 +10,12 @@ const league = localFont({
 
 export const metadata: Metadata = {
   title: "PowderPlanet",
+  short_name: 'PP'
   description: "We strive to become Wikipedia about Jinx, and in the future, about the entire Arcane lore.",
   icons: {
     icon: '/favicon.ico',
   },
+  "start_url": "/"
 }
 
 

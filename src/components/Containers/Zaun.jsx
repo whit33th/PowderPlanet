@@ -258,7 +258,7 @@ function Zaun() {
 								className={`relative w-full h-full md:w-1/2 p-6 md:p-8 bg-[#202020b3] rounded shadow-md border border-[#786d5e] backdrop-blur-lg transition-all group-hover:border-t-0 md:group-hover:border-t   ${index % 2 === 0 ? 'md:mr-[-3rem] border-r-0 md:group-hover:border-l-0' : 'md:ml-[-3rem] border-l-0 md:group-hover:border-r-0 group-hover:border-t-0 '
 									} transition-transform duration-500 `}
 							>
-								<h3 className='text-2xl text-[#dccdb0] font-semibold  mb-4'>{item.title}</h3>
+								<h1 className='text-2xl text-[#dccdb0] font-semibold  mb-4'>{item.title}</h1>
 								<p className='text-sm  text-[#9e968b] leading-relaxed'>{item.description}</p>
 
 								{/* Декоративный квадрат */}

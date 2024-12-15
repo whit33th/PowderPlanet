@@ -53,7 +53,7 @@ export default function ConceptArt() {
 						>
 							<Image
 								src={art.src}
-								alt={art.title}
+								alt={'Concept Art' + index}
 								className=" object-contain h-full rounded-sm "
 								width={1920}
 								height={1080}

@@ -160,8 +160,20 @@ function JinxShortInfo() {
                       }`}
                   >
 
-                    <Image className=" w-full h-full rounded-full object-cover object-center z-0 border-8 border-blue-400" src={'/assets/img/Powder.gif'} width={350} height={350} alt="powder" />
 
+                    <video
+                      className="w-full h-full rounded-full object-cover object-center z-0 border-8 border-blue-400"
+                      disablePictureInPicture
+                      preload="auto"
+                      autoPlay
+                      playsInline
+                      loop
+                      muted 
+                    >
+                      <source src="/assets/video/Powder.mp4" type="video/mp4" />
+                    </video>
+
+                    
 
                   </div>
                 </div>
