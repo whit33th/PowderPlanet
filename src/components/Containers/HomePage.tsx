@@ -4,7 +4,7 @@ import HalfScreenGrafity from '@/components/Containers/HalfScreanGrafity'
 import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'
 
-function HomePage () {
+function HomePage() {
   const [musicStatus, setMusicStatus] = useState(false)
   const [rotation, setRotation] = useState(0)
   const audioContextRef = useRef<AudioContext | null>(null)
@@ -95,14 +95,14 @@ function HomePage () {
           width={500}
           height={100}
           src='/assets/img/JinxNameGrafity.png'
-          alt=''
+          alt='Jinx'
         />
         <Image
           className='absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 opacity-30 z-10  '
           width={800}
           height={100}
           src='/assets/img/boom.gif'
-          alt=''
+          alt='grafity'
         />
         <HalfScreenGrafity />
       </div>

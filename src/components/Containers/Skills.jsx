@@ -17,15 +17,15 @@ function Skills() {
     return tooltip
       .replace(
         /<physicalDamage>(.*?)<\/physicalDamage>/g,
-        `<span class="text-orange-400 font-bold"><Image src="/assets/icons/physical.png" alt="" class="inline w-4 h-4 mr-1"/>$1</span>`
+        `<span class="text-orange-400 font-bold"><Image src="/assets/icons/physical.png" alt="physicalDamage" class="inline w-4 h-4 mr-1"/>$1</span>`
       )
       .replace(
         /<magicDamage>(.*?)<\/magicDamage>/g,
-        `<span class="text-purple-400 font-bold"><Image src="/assets/icons/magic.webp" alt="" class="inline w-4 h-4 mr-1"/>$1</span>`
+        `<span class="text-purple-400 font-bold"><Image src="/assets/icons/magic.webp" alt="magicDamage" class="inline w-4 h-4 mr-1"/>$1</span>`
       )
       .replace(
         /<trueDamage>(.*?)<\/trueDamage>/g,
-        `<span class="text-red-400 font-bold"><Image src="/assets/icons/true.png" alt="" class="inline w-4 h-4 mr-1"/>$1</span>`
+        `<span class="text-red-400 font-bold"><Image src="/assets/icons/true.png" alt="trueDamage" class="inline w-4 h-4 mr-1"/>$1</span>`
       )
       .replace(
         /<attackSpeed>(.*?)<\/attackSpeed>/g,
@@ -59,9 +59,9 @@ function Skills() {
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
           data.spells.map((spell, index) => (
             <div key={index} className="flex flex-col bg-gray-900 rounded-xl shadow-lg overflow-hidden">
-              <Image src={`/assets/img/Smile.png`} alt="" width={200} height={200} className="hidden md:block absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/3  scale-y-[1.15] drop-shadow-[0_10px_20px_#431dc11f] opacity-90 brightness-[0.8] rotate-[12deg] " />
+              <Image src={`/assets/img/Smile.png`} alt="Smile Image" width={200} height={200} className="hidden md:block absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/3  scale-y-[1.15] drop-shadow-[0_10px_20px_#431dc11f] opacity-90 brightness-[0.8] rotate-[12deg] " />
               
-              <Image src={`/assets/img/butterfly.png`} alt="" width={300} height={300} className=" hidden md:block  absolute bottom-0 right-20 md:right-0 translate-x-1/2 translate-y-1/2  opacity-90   rotate-[-40deg] hue-rotate-30 drop-shadow-2xl md:w-[150px] w-32 " />
+              <Image src={`/assets/img/butterfly.png`} alt="butterfly" width={300} height={300} className=" hidden md:block  absolute bottom-0 right-20 md:right-0 translate-x-1/2 translate-y-1/2  opacity-90   rotate-[-40deg] hue-rotate-30 drop-shadow-2xl md:w-[150px] w-32 " />
 
 
               <video
@@ -80,7 +80,7 @@ function Skills() {
                   
                   <Image
                     src={`/assets/img/${spell.id}.webp`}
-                    alt=""
+                    alt="Spell Image"
                     width={64}
                     height={64}
                     className="rounded-md border relative border-gray-700"
@@ -105,7 +105,7 @@ function Skills() {
         )}
       </div>
 
-      <Image src={`/assets/img/Workshop.png`} alt="" width={1500} height={1200} className="absolute top-0 left-0 w-full h-full z-[-1] opacity-30 blur-md" />
+      <Image src={`/assets/img/Workshop.png`} alt="Workshop" width={1500} height={1200} className="absolute top-0 left-0 w-full h-full z-[-1] opacity-30 blur-md" />
 
       <FullScreenGrafity />
     </div>

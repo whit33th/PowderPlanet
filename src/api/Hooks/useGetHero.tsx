@@ -8,6 +8,5 @@ export default function useGetHero (name: string) {
     select: data => data.data.data[name],
     enabled: !!name
   })
-
   return {data, isLoading,isError, isSuccess}
 }

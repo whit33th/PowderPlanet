@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .fancy-animation {
+    transition: 1s ease-in-out;
+  }
+
+  .fancy-animation:hover {
+    filter: hue-rotate(30deg);
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -28,12 +38,11 @@ main {
   max-height: 100vh;
   opacity: 1;
   display: block;
+  cursor: url(/assets/img/cursor2.png) 2 2, pointer;
+
 }
-x
 
-  
-
-img {
+x img {
   position: relative;
   z-index: 1;
 }
@@ -42,10 +51,45 @@ img {
   text-transform: math-auto;
 }
 
-.swiper-pagination{
+
+
+
+.scroll::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: #49cf000b;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+
+  mask-image: url(/assets/img/scroll.gif);
+  mask-size: cover;
+  mask-position: center;
+}
+
+
+
+.swiper-pagination {
   position: static !important;
   background-color: black;
   border-radius: 0.125rem !important;
+}
+
+.watermark {
+  display: none !important;
+}
+
+.swiper-pagination {
+  background-color: transparent !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #f6f6f6 !important;
+}
+
+.swiper-free-mode>.swiper-wrapper {
+  transition-timing-function: linear !important;
 }
 
 ::-webkit-scrollbar {

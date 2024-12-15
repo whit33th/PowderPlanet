@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import React, { useState } from 'react'
 
@@ -19,7 +21,7 @@ function JinxShortInfo() {
         width={1920}
         height={1080}
         src={'/assets/img/CoolBack.webp'}
-        alt=''
+        alt='background'
       />
       <div className='sm:px-36 px-12 pt-28 pb-28  relative  '>
         <div>
@@ -30,7 +32,7 @@ function JinxShortInfo() {
               width={200}
               height={100}
               src='/assets/img/JinxMonkeyGrafity2.webp'
-              alt=''
+              alt='grafity'
             />
             <Image
               className='absolute top-18 left-12 -hue-rotate-30 -translate-y-8 shadow-sm animate-fadeCycle opacity-40 -rotate-2 z-0'
@@ -38,7 +40,7 @@ function JinxShortInfo() {
               width={200}
               height={100}
               src='/assets/img/JinxMonkeyGrafity2.webp'
-              alt=''
+              alt='grafity'
             />
             <Image
               className='absolute top-20 left-20 -translate-y-8 shadow-sm animate-fadeCycle opacity-45 -rotate-14 backdrop-blur-sm transform scale-x-[-1] z-0'
@@ -46,7 +48,7 @@ function JinxShortInfo() {
               width={200}
               height={100}
               src='/assets/img/JinxMonkeyGrafity2.webp'
-              alt=''
+              alt='grafity'
             />
           </div>
         </div>
@@ -117,14 +119,14 @@ function JinxShortInfo() {
                   src={'/assets/img/blow2.webp'}
                   width={60}
                   height={40}
-                  alt=''
+                  alt='grafity'
                 />
                 <Image
                   className='absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2  z-0 rotate-[20deg] '
                   src={'/assets/img/blow4.webp'}
                   width={40}
                   height={40}
-                  alt=''
+                  alt='grafity'
                 />
               </div>
             </div>
@@ -158,7 +160,7 @@ function JinxShortInfo() {
                       }`}
                   >
 
-                    <Image className=" w-full h-full rounded-full object-cover object-center z-0 border-8 border-blue-400" src={'/assets/img/Powder.gif'} width={350} height={350} alt="" />
+                    <Image className=" w-full h-full rounded-full object-cover object-center z-0 border-8 border-blue-400" src={'/assets/img/Powder.gif'} width={350} height={350} alt="powder" />
 
 
                   </div>
@@ -190,21 +192,21 @@ function JinxShortInfo() {
         src={'/assets/img/blow3.webp'}
         width={115}
         height={140}
-        alt=''
+        alt='grafity'
       />
       <Image
         className='absolute bottom-12 right-6  z-0 rotate-[16deg] -hue-rotate-30 '
         src={'/assets/img/blow3.webp'}
         width={100}
         height={140}
-        alt=''
+        alt='grafity'
       />
       <Image
         className='absolute bottom-0 right-9  opacity-90 -hue-rotate-15  z-0 rotate-[23deg] '
         src={'/assets/img/blow3.webp'}
         width={140}
         height={140}
-        alt=''
+        alt='grafity'
       />
     </div>
   )

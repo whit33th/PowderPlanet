@@ -10,14 +10,14 @@ function HalfScreenGrafity() {
 				width={240}
 				height={100}
 				src="/assets/img/what.gif"
-				alt=""
+				alt="grafity"
 			/>
 			<Image
 				className="absolute top-[15%] left-[43%] opacity-30 z-0 rotate-[150deg] blur-[3px]"
 				width={200}
 				height={100}
 				src="/assets/img/cool.gif"
-				alt=""
+				alt="grafity"
 			/>
 
 			<Image
@@ -25,7 +25,7 @@ function HalfScreenGrafity() {
 				width={110}
 				height={100}
 				src="/assets/img/cool.gif"
-				alt=""
+				alt="grafity"
 			/>
 
 			<Image
@@ -33,7 +33,7 @@ function HalfScreenGrafity() {
 				width={200}
 				height={100}
 				src="/assets/img/boom.gif"
-				alt=""
+				alt="grafity"
 			/>
 
 			<Image
@@ -41,7 +41,7 @@ function HalfScreenGrafity() {
 				width={300}
 				height={100}
 				src="/assets/img/cool.gif"
-				alt=""
+				alt="grafity"
 			/>
 
 			<Image
@@ -49,7 +49,7 @@ function HalfScreenGrafity() {
 				width={400}
 				height={200}
 				src="/assets/img/boom.gif"
-				alt=""
+				alt="grafity"
 			/>
 
 
@@ -59,7 +59,7 @@ function HalfScreenGrafity() {
 				width={320}
 				height={100}
 				src="/assets/img/what.gif"
-				alt=""
+				alt="grafity"
 			/>
 
 			<Image
@@ -67,7 +67,7 @@ function HalfScreenGrafity() {
 				width={420}
 				height={100}
 				src="/assets/img/what.gif"
-				alt=""
+				alt="grafity"
 			/>
 
 			<Image
@@ -75,7 +75,7 @@ function HalfScreenGrafity() {
 				width={350}
 				height={100}
 				src="/assets/img/what.gif"
-				alt=""
+				alt="grafity"
 			/>
 
 			<Image
@@ -83,28 +83,28 @@ function HalfScreenGrafity() {
 				width={190}
 				height={100}
 				src="/assets/img/yay.gif"
-				alt=""
+				alt="grafity"
 			/>
 			<Image
 				className="absolute top-[-10%] left-[60%] opacity-30 z-0 rotate-[-183deg] -hue-rotate-[-120deg] blur-[8px]"
 				width={400}
 				height={200}
 				src="/assets/img/boom.gif"
-				alt=""
+				alt="grafity"
 			/>
 			<Image
 				className="absolute top-[20%] left-[65%] opacity-10 z-0 rotate-[-30deg] -hue-rotate-[-90deg] blur-[1px]"
 				width={200}
 				height={200}
 				src="/assets/img/heart.webp"
-				alt=""
+				alt="grafity"
 			/>
 			<Image
 				className="absolute top-[25%] left-[11%] opacity-35 z-0 rotate-[-72deg] -hue-rotate-[180deg] blur-[3px] "
 				width={300}
 				height={100}
 				src="/assets/img/what.gif"
-				alt=""
+				alt="grafity"
 			/>
 
 			<Image
@@ -112,14 +112,14 @@ function HalfScreenGrafity() {
 				width={200}
 				height={100}
 				src="/assets/img/arrow2.png"
-				alt=""
+				alt="grafity"
 			/>
 			<Image
 				className="absolute top-[-60px] left-[130px] rotate-[130deg]  opacity-80  "
 				width={160}
 				height={100}
 				src="/assets/img/arrow3.png"
-				alt=""
+				alt="grafity"
 			/>
 
 		</div>

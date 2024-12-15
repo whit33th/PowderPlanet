@@ -1,4 +1,4 @@
-import { table } from 'console'
+
 import type { Config } from "tailwindcss"
 
 export default {
@@ -24,8 +24,8 @@ export default {
 
       },
       screens: {
- tablet: '640px',
-}
+        tablet: '640px',
+      }
 
 
     },
