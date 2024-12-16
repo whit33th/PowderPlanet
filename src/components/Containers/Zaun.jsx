@@ -282,6 +282,9 @@ function Zaun() {
 				autoPlay
 				muted
 				loop
+				disablePictureInPicture
+				
+				
 			></video>
 		</div>
 	)
