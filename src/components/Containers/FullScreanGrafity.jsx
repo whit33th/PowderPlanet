@@ -5,9 +5,6 @@ function FullScreenGrafity() {
 	return (
 		<div className='absolute top-0 left-0 w-full h-full z-[-1] overflow-x-clip'>
 
-
-
-
 			<Image
 				className="absolute top-[45%] -translate-y-full left-[40%] -translate-x-1/2 opacity-30 z-0 rotate-[50deg] blur-[1px]"
 				width={200}

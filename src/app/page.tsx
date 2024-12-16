@@ -28,7 +28,7 @@ export default function Home() {
         {/* секция лола */}
         {/* <Skills /> */}
 
-        <Weapons />
+        <Weapons  />
         <Footer />
         
       </main>
