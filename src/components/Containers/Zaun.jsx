@@ -179,6 +179,7 @@ function Zaun() {
 											src={`/assets/img/ZaunHeroes/hero${index + 1}.jpg`}
 											width={1920}
 											height={1080}
+											loading='eager'
 											alt={`Hero ${index + 1}`}
 											onDragStart={(e) => e.preventDefault()}
 										/>
@@ -279,10 +280,12 @@ function Zaun() {
 			<video
 				className='w-full h-full object-cover z-[-2] absolute top-0 left-0 brightness-50 blur-md hue-rotate-90'
 				src='/assets/video/ZaunBg.mp4'
-				autoPlay
-				muted
-				loop
 				disablePictureInPicture
+				preload='auto'
+				autoPlay
+				playsInline
+				loop
+				muted
 				
 				
 			></video>
