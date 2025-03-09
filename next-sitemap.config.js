@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: 'https://powderplanet.netlify.app',
+  siteUrl: "https://powderplanet.netlify.app",
   generateRobotsTxt: true,
 };

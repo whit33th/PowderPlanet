@@ -1,5 +1,4 @@
-
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 export default {
   content: [
@@ -12,23 +11,17 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-      }, animation: {
-        spin: 'spin 6s linear infinite', // Стандартная анимация вращения
-
+      },
+      animation: {
+        spin: "spin 6s linear infinite", // Стандартная анимация вращения
       },
       keyframes: {
         spin: {
-          '0%': { transform: 'rotate(0deg)' },
-          '100%': { transform: 'rotate(360deg)' },
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
         },
-
       },
-      screens: {
-        tablet: '640px',
-      }
-
-
     },
   },
   plugins: [],
-} satisfies Config
+} satisfies Config;

@@ -13,15 +13,8 @@
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 body {
@@ -38,8 +31,9 @@ main {
   max-height: 100vh;
   opacity: 1;
   display: block;
-  cursor: url(/assets/img/cursor2.png) 2 2, pointer;
-
+  cursor:
+    url(/assets/img/cursor2.png) 2 2,
+    pointer;
 }
 
 x img {
@@ -51,11 +45,8 @@ x img {
   text-transform: math-auto;
 }
 
-
-
-
 .scroll::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background-color: #49cf000b;
@@ -67,8 +58,6 @@ x img {
   mask-size: cover;
   mask-position: center;
 }
-
-
 
 .swiper-pagination {
   position: static !important;
@@ -88,7 +77,7 @@ x img {
   background-color: #f6f6f6 !important;
 }
 
-.swiper-free-mode>.swiper-wrapper {
+.swiper-free-mode > .swiper-wrapper {
   transition-timing-function: linear !important;
 }
 
