@@ -71,7 +71,11 @@ function HomePage() {
           <div
             onClick={playMusic}
             className="shadow-xl border-8 border-[#2E4630] rounded-full absolute top-4 left-4 z-50 active:scale-105 hover:opacity-80 cursor-pointer transition"
-            onKeyDown={playMusic}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                playMusic();
+              }
+            }}
             role="button"
             tabIndex={0}
           >
