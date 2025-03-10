@@ -137,11 +137,10 @@ function JinxShortInfo() {
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 0.8, delay: 0.3 }}
                   viewport={{ once: true }}
-                  className="max-w-2xl relative text-sm font-mono bg-[#18181899] p-4 rounded-xl border-[1px] border-[#262626]"
+                  className="max-w-2xl relative text-sm/7 !font-beaufort bg-[#18181899] p-4 rounded-xl border-[1px] border-[#262626]"
                 >
                   {isJinx ? (
                     <>
-                      {" "}
                       A manic and impulsive criminal from Zaun, Jinx lives to
                       wreak havoc without care for the consequences. With an
                       arsenal of deadly weapons, she unleashes the loudest

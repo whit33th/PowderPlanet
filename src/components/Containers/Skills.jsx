@@ -34,13 +34,13 @@ function Skills() {
 
   return (
     <div className="md:p-24 relative p-4   ">
-      <div className="mb-12 z-10 ">
-        <h1 className="text-5xl text-center">Skills</h1>
-        <h1 className="text-5xl text-center">
+      <div className="mb-12 z-10 uppercase text-5xl  ">
+        <h1 className=" text-center">Skills</h1>
+        <h1 className=" text-center">
           Ski<span className="text-[#3e71d7]">X</span>
           <span className="text-[#a93ed7]">X</span>s
         </h1>
-        <h1 className="text-5xl text-center">
+        <h1 className=" text-center">
           <span className="text-[#a1e657]">X</span>kills
         </h1>
       </div>
@@ -49,28 +49,11 @@ function Skills() {
         {isLoading ? (
           <div>Loading...</div>
         ) : (
-          // eslint-disable-next-line react/no-array-index-key
           data.spells.map((spell, index) => (
             <div
-              key={index}
+              key={spell.id}
               className="flex flex-col bg-gray-900 rounded-xl shadow-lg overflow-hidden"
             >
-              <Image
-                src={`/assets/img/Smile.png`}
-                alt="Smile Image"
-                width={200}
-                height={200}
-                className="hidden md:block absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/3  scale-y-[1.15] drop-shadow-[0_10px_20px_#431dc11f] opacity-90 brightness-[0.8] rotate-[12deg] "
-              />
-
-              <Image
-                src={`/assets/img/butterfly.png`}
-                alt="butterfly"
-                width={300}
-                height={300}
-                className=" hidden md:block  absolute bottom-0 right-20 md:right-0 translate-x-1/2 translate-y-1/2  opacity-90   rotate-[-40deg] hue-rotate-30 drop-shadow-2xl md:w-[150px] w-32 "
-              />
-
               <video
                 className="w-full object-cover "
                 autoPlay
@@ -107,6 +90,21 @@ function Skills() {
             </div>
           ))
         )}
+        <Image
+          src={`/assets/img/Smile.png`}
+          alt="Smile Image"
+          width={200}
+          height={200}
+          className="hidden md:block absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/3  scale-y-[1.15] drop-shadow-[0_10px_20px_#431dc11f] opacity-90 brightness-[0.8] rotate-[12deg] "
+        />
+
+        <Image
+          src={`/assets/img/butterfly.png`}
+          alt="butterfly"
+          width={300}
+          height={300}
+          className=" hidden md:block  absolute bottom-0 right-20 md:right-0 translate-x-1/2 translate-y-1/2  opacity-90   rotate-[-40deg] hue-rotate-30 drop-shadow-2xl md:w-[150px] w-32 "
+        />
       </div>
 
       <Image

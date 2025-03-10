@@ -6,14 +6,14 @@ import * as motion from "motion/react-client";
 function Footer() {
   return (
     <motion.div
-      className="flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-4 p-12"
+      className="flex  flex-col sm:flex-row items-center justify-center sm:justify-between gap-4 p-12"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
     >
       <motion.h1
-        className="sm:text-7xl text-5xl"
+        className="sm:text-7xl text-5xl uppercase"
         initial={{ opacity: 0, x: -20 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}

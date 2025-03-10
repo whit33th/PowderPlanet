@@ -12,6 +12,7 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      
       animation: {
         spin: "spin 6s linear infinite", // Стандартная анимация вращения
       },

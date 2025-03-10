@@ -6,6 +6,7 @@ import Zaun from "./../components/Containers/Zaun";
 import Footer from "./../components/Containers/Footer";
 import Wall from "./../components/Containers/Wall";
 
+
 export default function Home() {
   return (
     <>

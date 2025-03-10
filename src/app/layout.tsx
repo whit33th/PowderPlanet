@@ -1,13 +1,9 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 
 import QueryProvide from "./../helpers/QueryProvide";
 import React from "react";
-const league = localFont({
-  src: "./fonts/League.otf",
-  weight: "100 900",
-});
+import { beaufort } from "./fonts/fonts";
 
 export const metadata: Metadata = {
   title: "PowderPlanet",
@@ -41,8 +37,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-
-      <body className={`${league} antialiased`}>
+      <body className={`${beaufort.className}  antialiased`}>
         <QueryProvide>{children}</QueryProvide>
       </body>
     </html>

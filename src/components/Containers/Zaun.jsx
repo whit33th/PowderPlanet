@@ -121,7 +121,7 @@ function Zaun() {
               whileInView="visible"
               viewport={{ once: true }}
             >
-              <div className="grid grid-cols-2 gap-2 *:text-center">
+              <div className="grid grid-cols-2 gap-2 *:text-center ">
                 {[
                   "Industrial oligarchy",
                   "Advanced Tech",
@@ -133,7 +133,7 @@ function Zaun() {
                     className="border border-[#544c3d] p-4 rounded"
                     variants={fadeIn}
                   >
-                    <p className="text-xs">{text}</p>
+                    <p className="text-xs uppercase">{text}</p>
                   </motion.div>
                 ))}
               </div>
@@ -162,7 +162,7 @@ function Zaun() {
               </div>
             </figure>
           </div>
-          <p className="text-sm/7 py-6 ">
+          <p className="text-md/7 py-6 ">
             Zaun is a large, undercity district, lying in the deep canyons and
             valleys threading Piltover. What light reaches below is filtered
             through fumes leaking from the tangles of corroded pipework and
@@ -333,7 +333,7 @@ function Zaun() {
               viewport={{ once: true }}
               variants={itemFadeIn}
             >
-              {/* Изображение */}
+
               <Tilt
                 options={optionsTerms}
                 className="relative w-full transition-transform duration-[100ms] ease-in-out md:w-1/2 h-64 md:h-96"
@@ -350,7 +350,7 @@ function Zaun() {
                 </div>
               </Tilt>
 
-              {/* Текст */}
+
               <div
                 className={`relative w-full h-full md:w-1/2 p-6 md:p-8 bg-[#202020b3] rounded shadow-md border border-[#786d5e] backdrop-blur-lg transition-all group-hover:border-t-0 md:group-hover:border-t   ${
                   index % 2 === 0
@@ -358,10 +358,10 @@ function Zaun() {
                     : "md:ml-[-3rem] border-l-0 md:group-hover:border-r-0 group-hover:border-t-0 "
                 } transition-transform duration-500 `}
               >
-                <h1 className="text-2xl text-[#dccdb0] font-semibold  mb-4">
+                <h1 className="text-3xl text-[#dccdb0] font-semibold  mb-4">
                   {item.title}
                 </h1>
-                <p className="text-sm  text-[#9e968b] leading-relaxed">
+                <p className="text-[1.05rem]  text-[#9e968b] ">
                   {item.description}
                 </p>
 
