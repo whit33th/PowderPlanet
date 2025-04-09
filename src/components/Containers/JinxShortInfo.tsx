@@ -9,6 +9,7 @@ function JinxShortInfo() {
   const handleToggle = () => {
     setIsJinx(!isJinx);
   };
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -277,48 +278,50 @@ object-center ${!isJinx ? "hue-rotate-[300deg]" : ""}`}
           </motion.div>
         </div>
       </div>
-      <motion.div
-        initial={{ opacity: 0, rotate: 0, y: 30 }}
-        whileInView={{ opacity: 1, rotate: 20, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className="absolute bottom-1 right-0 z-0"
-      >
-        <Image
-          src={"/assets/img/blow3.webp"}
-          width={115}
-          height={140}
-          alt="grafity"
-        />
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, rotate: 0, y: 20 }}
-        whileInView={{ opacity: 1, rotate: 16, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        viewport={{ once: true }}
-        className="absolute bottom-12 right-6 z-0 -hue-rotate-30"
-      >
-        <Image
-          src={"/assets/img/blow3.webp"}
-          width={100}
-          height={140}
-          alt="grafity"
-        />
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, rotate: 0, y: 30 }}
-        whileInView={{ opacity: 0.9, rotate: 23, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.4 }}
-        viewport={{ once: true }}
-        className="absolute bottom-0 right-9 opacity-90 -hue-rotate-15 z-0"
-      >
-        <Image
-          src={"/assets/img/blow3.webp"}
-          width={140}
-          height={140}
-          alt="grafity"
-        />
-      </motion.div>
+      <div>
+        <motion.div
+          initial={{ opacity: 0, rotate: 0, y: 30 }}
+          whileInView={{ opacity: 1, rotate: 20, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="absolute bottom-1 right-0 z-0"
+        >
+          <Image
+            src={"/assets/img/blow3.webp"}
+            width={115}
+            height={140}
+            alt="grafity"
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, rotate: 0, y: 20 }}
+          whileInView={{ opacity: 1, rotate: 16, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="absolute bottom-12 right-6 z-0 -hue-rotate-30"
+        >
+          <Image
+            src={"/assets/img/blow3.webp"}
+            width={100}
+            height={140}
+            alt="grafity"
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, rotate: 0, y: 30 }}
+          whileInView={{ opacity: 0.9, rotate: 23, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="absolute bottom-0 right-9 opacity-90 -hue-rotate-15 z-0"
+        >
+          <Image
+            src={"/assets/img/blow3.webp"}
+            width={140}
+            height={140}
+            alt="grafity"
+          />
+        </motion.div>
+      </div>
     </motion.div>
   );
 }

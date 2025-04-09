@@ -18,7 +18,7 @@ function Zaun() {
     speed: 1000, // Speed of the enter/exit transition
     transition: true, // Set a transition on enter/exit.
     axis: null, // What axis should be disabled. Can be X or Y.
-    reset: true, // If the tilt effect has to be reset on exit.
+    reset: false, // If the tilt effect has to be reset on exit.
     easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
   };
   const optionsSwiper = {
@@ -72,7 +72,7 @@ function Zaun() {
     <div className="relative p-6 sm:p-20 flex flex-col gap-8 scroll overflow-x-hidden ">
       <div className="flex flex-col md:flex-row gap-8 justify-between *:flex-1">
         <motion.div
-          className="flex flex-col items-center md:items-start justify-end gap-4"
+          className="flex flex-col  items-center md:items-start justify-end gap-4"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -333,7 +333,6 @@ function Zaun() {
               viewport={{ once: true }}
               variants={itemFadeIn}
             >
-
               <Tilt
                 options={optionsTerms}
                 className="relative w-full transition-transform duration-[100ms] ease-in-out md:w-1/2 h-64 md:h-96"
@@ -349,7 +348,6 @@ function Zaun() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#202020] via-transparent to-transparent opacity-90 rounded"></div>
                 </div>
               </Tilt>
-
 
               <div
                 className={`relative w-full h-full md:w-1/2 p-6 md:p-8 bg-[#202020b3] rounded shadow-md border border-[#786d5e] backdrop-blur-lg transition-all group-hover:border-t-0 md:group-hover:border-t   ${
