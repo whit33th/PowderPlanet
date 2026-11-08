@@ -1,10 +1,10 @@
-# PowderPlanet 🌌
+# PowderPlanet
 
 A web application dedicated to the character Jinx (Powder) from the Arcane universe, striving to become a comprehensive wiki about Jinx, and eventually, about the entire Arcane lore.
 
 ## Live Demo
 
-🌐 [PowderPlanet](https://powderplanet.netlify.app)
+[PowderPlanet](https://powderplanet.netlify.app)
 
 ## Features
 
@@ -12,23 +12,21 @@ A web application dedicated to the character Jinx (Powder) from the Arcane unive
 - Concept art gallery
 - Local legends and lore
 - Zaun terminologies and innovations
-- Character skills and abilities
 - Interactive UI with Arcane-themed design
 
 ## Tech Stack
 
-- **Framework**: Next.js 15
-- **Styling**: Tailwind CSS
-- **Data Fetching**: React Query
-- **Animations**: Framer Motion
-- **Slideshows**: Swiper.js
+- **Framework**: Next.js 16
+- **Styling**: Tailwind CSS 4
+- **Animations**: Motion
+- **Galleries**: React Bits Flex Carousel and Morph Slider
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js 18.18.0 or higher
-- pnpm (recommended) or npm
+- Node.js 20 or higher
+- [Bun](https://bun.sh)
 
 ### Installation
 
@@ -36,3 +34,6 @@ A web application dedicated to the character Jinx (Powder) from the Arcane unive
    ```bash
    git clone https://github.com/yourusername/PowderPlanet.git
    cd PowderPlanet
+   bun install
+   bun run dev
+   ```

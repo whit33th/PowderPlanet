@@ -1,47 +1,29 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer utilities {
-  .fancy-animation {
-    transition: 1s ease-in-out;
-  }
-
-  .fancy-animation:hover {
-    filter: hue-rotate(30deg);
-  }
+@theme {
+  --color-background: #0a0a0a;
+  --color-foreground: #ededed;
+  --color-jinx: #de59ea;
+  --color-powder: #59cfea;
+  --color-zaun: #c2e29c;
+  --color-ink: #141414;
 }
 
-:root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+html {
+  background: var(--color-background);
+  color: var(--color-foreground);
 }
 
 body {
   text-wrap: pretty;
   color: var(--foreground);
-
   -webkit-font-smoothing: antialiased;
-
   background: var(--background);
   min-height: 100vh;
 }
 
 main {
-  height: 100vh;
-  max-height: 100vh;
-  opacity: 1;
-  display: block;
   cursor: url(/assets/img/cursor2.png) 2 2, pointer;
-}
-
-x img {
-  position: relative;
-  z-index: 1;
-}
-
-.math-auto {
-  text-transform: math-auto;
 }
 
 .scroll::before {
@@ -49,35 +31,10 @@ x img {
   position: absolute;
   inset: 0;
   background-color: #49cf000b;
-  background-size: cover;
-  background-position: center;
   z-index: -1;
-
   mask-image: url(/assets/img/scroll.gif);
   mask-size: cover;
   mask-position: center;
-}
-
-.swiper-pagination {
-  position: static !important;
-  background-color: black;
-  border-radius: 0.125rem !important;
-}
-
-.watermark {
-  display: none !important;
-}
-
-.swiper-pagination {
-  background-color: transparent !important;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: #f6f6f6 !important;
-}
-
-.swiper-free-mode > .swiper-wrapper {
-  transition-timing-function: linear !important;
 }
 
 ::-webkit-scrollbar {
@@ -87,11 +44,16 @@ x img {
 
 ::-webkit-scrollbar-track {
   background: #1e1e1e;
-  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: -webkit-linear-gradient(16deg, #e21392, #e41996);
+  background: linear-gradient(16deg, #e21392, #e41996);
   border-radius: 10px;
   border: 2px solid #1e1e1e;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }

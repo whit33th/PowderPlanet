@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
-import QueryProvide from "./../helpers/QueryProvide";
-import React from "react";
 import { beaufort } from "./fonts/fonts";
+import { MotionProvider } from "@/components/UI/MotionProvider";
 
 export const metadata: Metadata = {
   title: "PowderPlanet",
@@ -34,11 +32,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-      </head>
-      <body className={`${beaufort.className}  antialiased`}>
-        <QueryProvide>{children}</QueryProvide>
+      <body className={`${beaufort.className} antialiased`}>
+        <MotionProvider>{children}</MotionProvider>
       </body>
     </html>
   );
